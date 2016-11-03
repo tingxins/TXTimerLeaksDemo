@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9705A61A1DCB28BF00A179D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A6191DCB28BF00A179D3 /* main.m */; };
+		9705A61D1DCB28BF00A179D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A61C1DCB28BF00A179D3 /* AppDelegate.m */; };
+		9705A6231DCB28BF00A179D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9705A6211DCB28BF00A179D3 /* Main.storyboard */; };
+		9705A6251DCB28BF00A179D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9705A6241DCB28BF00A179D3 /* Assets.xcassets */; };
+		9705A6281DCB28BF00A179D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9705A6261DCB28BF00A179D3 /* LaunchScreen.storyboard */; };
+		9705A6331DCB28C000A179D3 /* TXTimerLeaksDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A6321DCB28C000A179D3 /* TXTimerLeaksDemoTests.m */; };
+		9705A63E1DCB28C000A179D3 /* TXTimerLeaksDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A63D1DCB28C000A179D3 /* TXTimerLeaksDemoUITests.m */; };
+		9705A64D1DCB297F00A179D3 /* TXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A64C1DCB297F00A179D3 /* TXTableViewController.m */; };
+		9705A6501DCB2C9900A179D3 /* TXNSTimerBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A64F1DCB2C9900A179D3 /* TXNSTimerBlockController.m */; };
+		9705A6531DCB2CAA00A179D3 /* TXNSTimerTargetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A6521DCB2CAA00A179D3 /* TXNSTimerTargetController.m */; };
+		9705A6561DCB2CBF00A179D3 /* TXNSTimerProxyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A6551DCB2CBF00A179D3 /* TXNSTimerProxyController.m */; };
+		9705A6591DCB2CD200A179D3 /* TXCADisplayLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A6581DCB2CD200A179D3 /* TXCADisplayLinkController.m */; };
+		9705A65C1DCB2F0700A179D3 /* TXBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A65B1DCB2F0700A179D3 /* TXBasicViewController.m */; };
+		9705A6621DCB32D500A179D3 /* NSTimer+TXTimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A6611DCB32D500A179D3 /* NSTimer+TXTimerTarget.m */; };
+		9705A6651DCB3A8400A179D3 /* TXTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9705A6641DCB3A8400A179D3 /* TXTimerProxy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9705A62F1DCB28C000A179D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9705A60D1DCB28BF00A179D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9705A6141DCB28BF00A179D3;
+			remoteInfo = TXTimerLeaksDemo;
+		};
+		9705A63A1DCB28C000A179D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9705A60D1DCB28BF00A179D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9705A6141DCB28BF00A179D3;
+			remoteInfo = TXTimerLeaksDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9705A6151DCB28BF00A179D3 /* TXTimerLeaksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXTimerLeaksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9705A6191DCB28BF00A179D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9705A61B1DCB28BF00A179D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9705A61C1DCB28BF00A179D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9705A6221DCB28BF00A179D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9705A6241DCB28BF00A179D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9705A6271DCB28BF00A179D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9705A6291DCB28BF00A179D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9705A62E1DCB28C000A179D3 /* TXTimerLeaksDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTimerLeaksDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9705A6321DCB28C000A179D3 /* TXTimerLeaksDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXTimerLeaksDemoTests.m; sourceTree = "<group>"; };
+		9705A6341DCB28C000A179D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9705A6391DCB28C000A179D3 /* TXTimerLeaksDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTimerLeaksDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9705A63D1DCB28C000A179D3 /* TXTimerLeaksDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXTimerLeaksDemoUITests.m; sourceTree = "<group>"; };
+		9705A63F1DCB28C000A179D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9705A64B1DCB297F00A179D3 /* TXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTableViewController.h; sourceTree = "<group>"; };
+		9705A64C1DCB297F00A179D3 /* TXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTableViewController.m; sourceTree = "<group>"; };
+		9705A64E1DCB2C9900A179D3 /* TXNSTimerBlockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXNSTimerBlockController.h; sourceTree = "<group>"; };
+		9705A64F1DCB2C9900A179D3 /* TXNSTimerBlockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXNSTimerBlockController.m; sourceTree = "<group>"; };
+		9705A6511DCB2CAA00A179D3 /* TXNSTimerTargetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXNSTimerTargetController.h; sourceTree = "<group>"; };
+		9705A6521DCB2CAA00A179D3 /* TXNSTimerTargetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXNSTimerTargetController.m; sourceTree = "<group>"; };
+		9705A6541DCB2CBF00A179D3 /* TXNSTimerProxyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXNSTimerProxyController.h; sourceTree = "<group>"; };
+		9705A6551DCB2CBF00A179D3 /* TXNSTimerProxyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXNSTimerProxyController.m; sourceTree = "<group>"; };
+		9705A6571DCB2CD200A179D3 /* TXCADisplayLinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXCADisplayLinkController.h; sourceTree = "<group>"; };
+		9705A6581DCB2CD200A179D3 /* TXCADisplayLinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXCADisplayLinkController.m; sourceTree = "<group>"; };
+		9705A65A1DCB2F0700A179D3 /* TXBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBasicViewController.h; sourceTree = "<group>"; };
+		9705A65B1DCB2F0700A179D3 /* TXBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBasicViewController.m; sourceTree = "<group>"; };
+		9705A6601DCB32D500A179D3 /* NSTimer+TXTimerTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+TXTimerTarget.h"; sourceTree = "<group>"; };
+		9705A6611DCB32D500A179D3 /* NSTimer+TXTimerTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+TXTimerTarget.m"; sourceTree = "<group>"; };
+		9705A6631DCB3A8400A179D3 /* TXTimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTimerProxy.h; sourceTree = "<group>"; };
+		9705A6641DCB3A8400A179D3 /* TXTimerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTimerProxy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9705A6121DCB28BF00A179D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705A62B1DCB28C000A179D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705A6361DCB28C000A179D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9705A60C1DCB28BF00A179D3 = {
+			isa = PBXGroup;
+			children = (
+				9705A6171DCB28BF00A179D3 /* TXTimerLeaksDemo */,
+				9705A6311DCB28C000A179D3 /* TXTimerLeaksDemoTests */,
+				9705A63C1DCB28C000A179D3 /* TXTimerLeaksDemoUITests */,
+				9705A6161DCB28BF00A179D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9705A6161DCB28BF00A179D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9705A6151DCB28BF00A179D3 /* TXTimerLeaksDemo.app */,
+				9705A62E1DCB28C000A179D3 /* TXTimerLeaksDemoTests.xctest */,
+				9705A6391DCB28C000A179D3 /* TXTimerLeaksDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9705A6171DCB28BF00A179D3 /* TXTimerLeaksDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9705A61B1DCB28BF00A179D3 /* AppDelegate.h */,
+				9705A61C1DCB28BF00A179D3 /* AppDelegate.m */,
+				9705A6211DCB28BF00A179D3 /* Main.storyboard */,
+				9705A6241DCB28BF00A179D3 /* Assets.xcassets */,
+				9705A6261DCB28BF00A179D3 /* LaunchScreen.storyboard */,
+				9705A6291DCB28BF00A179D3 /* Info.plist */,
+				9705A64B1DCB297F00A179D3 /* TXTableViewController.h */,
+				9705A64C1DCB297F00A179D3 /* TXTableViewController.m */,
+				9705A65A1DCB2F0700A179D3 /* TXBasicViewController.h */,
+				9705A65B1DCB2F0700A179D3 /* TXBasicViewController.m */,
+				9705A64E1DCB2C9900A179D3 /* TXNSTimerBlockController.h */,
+				9705A64F1DCB2C9900A179D3 /* TXNSTimerBlockController.m */,
+				9705A6511DCB2CAA00A179D3 /* TXNSTimerTargetController.h */,
+				9705A6521DCB2CAA00A179D3 /* TXNSTimerTargetController.m */,
+				9705A6601DCB32D500A179D3 /* NSTimer+TXTimerTarget.h */,
+				9705A6611DCB32D500A179D3 /* NSTimer+TXTimerTarget.m */,
+				9705A6541DCB2CBF00A179D3 /* TXNSTimerProxyController.h */,
+				9705A6551DCB2CBF00A179D3 /* TXNSTimerProxyController.m */,
+				9705A6631DCB3A8400A179D3 /* TXTimerProxy.h */,
+				9705A6641DCB3A8400A179D3 /* TXTimerProxy.m */,
+				9705A6571DCB2CD200A179D3 /* TXCADisplayLinkController.h */,
+				9705A6581DCB2CD200A179D3 /* TXCADisplayLinkController.m */,
+				9705A6181DCB28BF00A179D3 /* Supporting Files */,
+			);
+			path = TXTimerLeaksDemo;
+			sourceTree = "<group>";
+		};
+		9705A6181DCB28BF00A179D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9705A6191DCB28BF00A179D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9705A6311DCB28C000A179D3 /* TXTimerLeaksDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9705A6321DCB28C000A179D3 /* TXTimerLeaksDemoTests.m */,
+				9705A6341DCB28C000A179D3 /* Info.plist */,
+			);
+			path = TXTimerLeaksDemoTests;
+			sourceTree = "<group>";
+		};
+		9705A63C1DCB28C000A179D3 /* TXTimerLeaksDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9705A63D1DCB28C000A179D3 /* TXTimerLeaksDemoUITests.m */,
+				9705A63F1DCB28C000A179D3 /* Info.plist */,
+			);
+			path = TXTimerLeaksDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9705A6141DCB28BF00A179D3 /* TXTimerLeaksDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9705A6421DCB28C000A179D3 /* Build configuration list for PBXNativeTarget "TXTimerLeaksDemo" */;
+			buildPhases = (
+				9705A6111DCB28BF00A179D3 /* Sources */,
+				9705A6121DCB28BF00A179D3 /* Frameworks */,
+				9705A6131DCB28BF00A179D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXTimerLeaksDemo;
+			productName = TXTimerLeaksDemo;
+			productReference = 9705A6151DCB28BF00A179D3 /* TXTimerLeaksDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9705A62D1DCB28C000A179D3 /* TXTimerLeaksDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9705A6451DCB28C000A179D3 /* Build configuration list for PBXNativeTarget "TXTimerLeaksDemoTests" */;
+			buildPhases = (
+				9705A62A1DCB28C000A179D3 /* Sources */,
+				9705A62B1DCB28C000A179D3 /* Frameworks */,
+				9705A62C1DCB28C000A179D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9705A6301DCB28C000A179D3 /* PBXTargetDependency */,
+			);
+			name = TXTimerLeaksDemoTests;
+			productName = TXTimerLeaksDemoTests;
+			productReference = 9705A62E1DCB28C000A179D3 /* TXTimerLeaksDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9705A6381DCB28C000A179D3 /* TXTimerLeaksDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9705A6481DCB28C000A179D3 /* Build configuration list for PBXNativeTarget "TXTimerLeaksDemoUITests" */;
+			buildPhases = (
+				9705A6351DCB28C000A179D3 /* Sources */,
+				9705A6361DCB28C000A179D3 /* Frameworks */,
+				9705A6371DCB28C000A179D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9705A63B1DCB28C000A179D3 /* PBXTargetDependency */,
+			);
+			name = TXTimerLeaksDemoUITests;
+			productName = TXTimerLeaksDemoUITests;
+			productReference = 9705A6391DCB28C000A179D3 /* TXTimerLeaksDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9705A60D1DCB28BF00A179D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = tingxins;
+				TargetAttributes = {
+					9705A6141DCB28BF00A179D3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = X37JS8D42G;
+						ProvisioningStyle = Automatic;
+					};
+					9705A62D1DCB28C000A179D3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = X37JS8D42G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9705A6141DCB28BF00A179D3;
+					};
+					9705A6381DCB28C000A179D3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = X37JS8D42G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9705A6141DCB28BF00A179D3;
+					};
+				};
+			};
+			buildConfigurationList = 9705A6101DCB28BF00A179D3 /* Build configuration list for PBXProject "TXTimerLeaksDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9705A60C1DCB28BF00A179D3;
+			productRefGroup = 9705A6161DCB28BF00A179D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9705A6141DCB28BF00A179D3 /* TXTimerLeaksDemo */,
+				9705A62D1DCB28C000A179D3 /* TXTimerLeaksDemoTests */,
+				9705A6381DCB28C000A179D3 /* TXTimerLeaksDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9705A6131DCB28BF00A179D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9705A6281DCB28BF00A179D3 /* LaunchScreen.storyboard in Resources */,
+				9705A6251DCB28BF00A179D3 /* Assets.xcassets in Resources */,
+				9705A6231DCB28BF00A179D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705A62C1DCB28C000A179D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705A6371DCB28C000A179D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9705A6111DCB28BF00A179D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9705A64D1DCB297F00A179D3 /* TXTableViewController.m in Sources */,
+				9705A6561DCB2CBF00A179D3 /* TXNSTimerProxyController.m in Sources */,
+				9705A6531DCB2CAA00A179D3 /* TXNSTimerTargetController.m in Sources */,
+				9705A6591DCB2CD200A179D3 /* TXCADisplayLinkController.m in Sources */,
+				9705A6651DCB3A8400A179D3 /* TXTimerProxy.m in Sources */,
+				9705A6621DCB32D500A179D3 /* NSTimer+TXTimerTarget.m in Sources */,
+				9705A61D1DCB28BF00A179D3 /* AppDelegate.m in Sources */,
+				9705A6501DCB2C9900A179D3 /* TXNSTimerBlockController.m in Sources */,
+				9705A61A1DCB28BF00A179D3 /* main.m in Sources */,
+				9705A65C1DCB2F0700A179D3 /* TXBasicViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705A62A1DCB28C000A179D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9705A6331DCB28C000A179D3 /* TXTimerLeaksDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9705A6351DCB28C000A179D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9705A63E1DCB28C000A179D3 /* TXTimerLeaksDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9705A6301DCB28C000A179D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9705A6141DCB28BF00A179D3 /* TXTimerLeaksDemo */;
+			targetProxy = 9705A62F1DCB28C000A179D3 /* PBXContainerItemProxy */;
+		};
+		9705A63B1DCB28C000A179D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9705A6141DCB28BF00A179D3 /* TXTimerLeaksDemo */;
+			targetProxy = 9705A63A1DCB28C000A179D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9705A6211DCB28BF00A179D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9705A6221DCB28BF00A179D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9705A6261DCB28BF00A179D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9705A6271DCB28BF00A179D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9705A6401DCB28C000A179D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9705A6411DCB28C000A179D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9705A6431DCB28C000A179D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X37JS8D42G;
+				INFOPLIST_FILE = TXTimerLeaksDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tingxins.TXTimerLeaksDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9705A6441DCB28C000A179D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X37JS8D42G;
+				INFOPLIST_FILE = TXTimerLeaksDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tingxins.TXTimerLeaksDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9705A6461DCB28C000A179D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X37JS8D42G;
+				INFOPLIST_FILE = TXTimerLeaksDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tingxins.TXTimerLeaksDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TXTimerLeaksDemo.app/TXTimerLeaksDemo";
+			};
+			name = Debug;
+		};
+		9705A6471DCB28C000A179D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X37JS8D42G;
+				INFOPLIST_FILE = TXTimerLeaksDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tingxins.TXTimerLeaksDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TXTimerLeaksDemo.app/TXTimerLeaksDemo";
+			};
+			name = Release;
+		};
+		9705A6491DCB28C000A179D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = X37JS8D42G;
+				INFOPLIST_FILE = TXTimerLeaksDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tingxins.TXTimerLeaksDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TXTimerLeaksDemo;
+			};
+			name = Debug;
+		};
+		9705A64A1DCB28C000A179D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = X37JS8D42G;
+				INFOPLIST_FILE = TXTimerLeaksDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tingxins.TXTimerLeaksDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TXTimerLeaksDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9705A6101DCB28BF00A179D3 /* Build configuration list for PBXProject "TXTimerLeaksDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9705A6401DCB28C000A179D3 /* Debug */,
+				9705A6411DCB28C000A179D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9705A6421DCB28C000A179D3 /* Build configuration list for PBXNativeTarget "TXTimerLeaksDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9705A6431DCB28C000A179D3 /* Debug */,
+				9705A6441DCB28C000A179D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9705A6451DCB28C000A179D3 /* Build configuration list for PBXNativeTarget "TXTimerLeaksDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9705A6461DCB28C000A179D3 /* Debug */,
+				9705A6471DCB28C000A179D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9705A6481DCB28C000A179D3 /* Build configuration list for PBXNativeTarget "TXTimerLeaksDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9705A6491DCB28C000A179D3 /* Debug */,
+				9705A64A1DCB28C000A179D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9705A60D1DCB28BF00A179D3 /* Project object */;
+}
